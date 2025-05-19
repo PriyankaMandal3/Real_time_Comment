@@ -33,7 +33,7 @@ func main() {
 				msgCount++
 				fmt.Printf("Received message Count: %d: | Topic (%s) | Message(%s)n", msgCount, string(msg.Topic), string(msg.Value))
 			case <-sigchan:
-				fmt.Println("Interrruption dectection")
+				fmt.Println("Interrruption detection")
 				doneCh <- struct{}{}
 				return
 			}
